@@ -53,7 +53,7 @@ public class CharacterController : MonoBehaviour {
             transform.rotation = Quaternion.LookRotation(velocity);
 
         // We apply gravity manually for more tuning control
-        rb.AddForce(new Vector3 (0, -gravity * rb.mass, 0));
+        //rb.AddForce(new Vector3 (0, -gravity * rb.mass, 0));
 
 	    grounded = false;
 	}
