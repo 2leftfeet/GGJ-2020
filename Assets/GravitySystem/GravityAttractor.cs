@@ -16,7 +16,7 @@ public class GravityAttractor : MonoBehaviour
         gravityObjects = FindObjectsOfType<GravityObject>();
     }
 
-    void Update()
+    void FixedUpdate()
     {
         foreach (GravityObject gravityObject in gravityObjects)
         {
@@ -29,6 +29,7 @@ public class GravityAttractor : MonoBehaviour
         Rigidbody rbToAttract = toAttract.rb;
 
         Vector3 direction = rb.position - rbToAttract.position;
+        toAttract.gravityDirection = direction;
         float distance = direction.magnitude;
 
         float forceMagnitude = (rb.mass * rbToAttract.mass) / (distance * distance);
