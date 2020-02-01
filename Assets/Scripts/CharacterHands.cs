@@ -79,6 +79,7 @@ public class CharacterHands : MonoBehaviour
         carriableInHands.transform.SetParent(null);
 
         Physics.IgnoreCollision(GetComponent<Collider>(), carriableInHands.GetComponent<Collider>(), false);
+        carriableInHands.GetComponent<Rigidbody>().AddForce(transform.forward * 50);
 
         carriableInHands = null;
         mustLerp = false;
