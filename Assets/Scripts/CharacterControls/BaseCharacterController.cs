@@ -5,4 +5,5 @@ using UnityEngine;
 public abstract class BaseCharacterController : MonoBehaviour
 {
     public bool hasDoubleJump;
+    public bool grounded;
 }

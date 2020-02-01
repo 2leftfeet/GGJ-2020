@@ -70,7 +70,7 @@ public class CharacterHands : MonoBehaviour
 
         Physics.IgnoreCollision(GetComponent<Collider>(), carriableInHands.GetComponent<Collider>());
 
-        mustLerp = true;
+        StartCoroutine(ActivateLerp());
     }
 
     void Unequip()
@@ -82,5 +82,11 @@ public class CharacterHands : MonoBehaviour
 
         carriableInHands = null;
         mustLerp = false;
+    }
+
+    IEnumerator ActivateLerp()
+    {
+        yield return new WaitForSeconds(0.5f);
+        mustLerp = true;
     }
 }
