@@ -37,6 +37,11 @@ public class SimpleCharacterController : BaseCharacterController
             shouldJump = true;
         }
 
+        if (!doubleJumpAvailable)
+        {
+            hasDoubleJump = false;
+        }
+
     }
 
     // Update is called once per frame
