@@ -8,7 +8,6 @@ public class GravityCharacterController : BaseCharacterController
     public float jumpHeight = 10;
     private Vector3 moveDir;
     private Rigidbody rb;
-    public bool grounded = true;
     public FauxBody fb;
 
     private bool doubleJumpAvailable;
@@ -19,6 +18,7 @@ public class GravityCharacterController : BaseCharacterController
     {
         rb = gameObject.GetComponent<Rigidbody>();
         fb = gameObject.GetComponent<FauxBody>();
+        grounded = true;
     }
 
     // Update is called once per frame

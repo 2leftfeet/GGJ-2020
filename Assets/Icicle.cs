@@ -9,9 +9,13 @@ public class Icicle : MonoBehaviour
     float startingDistance;
     float currentDistance;
     public GameObject Player;
+    Rigidbody rb;
+    public GameObject Explosion;
     // Start is called before the first frame update
     void Start()
     {
+        Physics.IgnoreCollision(gameObject.GetComponent<BoxCollider>(), Player.GetComponent<CapsuleCollider>());
+        rb = GetComponent<Rigidbody>();
         RaycastHit hit;
         if (Physics.Raycast(transform.position, -transform.up, out hit))
         {
@@ -46,7 +50,16 @@ public class Icicle : MonoBehaviour
     {
         if(other.gameObject == Player)
         {
-            gameObject.GetComponent<Rigidbody>().useGravity = true;
+            rb.useGravity = true;
+        }
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if(collision.gameObject.layer == 8) // World layer //check the int value in layer manager(User Defined starts at 8))
+        {
+            Instantiate(Explosion, gameObject.transform.position, Quaternion.identity);
+            Destroy(gameObject);
         }
     }
 }
