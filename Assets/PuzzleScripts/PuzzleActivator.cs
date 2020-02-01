@@ -5,12 +5,14 @@ using UnityEngine;
 public class PuzzleActivator : MonoBehaviour
 {
     [SerializeField] PuzzleMechanism connectedMechanism;
+    [SerializeField] LineMesh lineMesh;
 
     void OnTriggerEnter(Collider collider)
     {
         if (collider.CompareTag("PuzzleCube"))
         {
             connectedMechanism.Activate();
+            lineMesh.Activate();
         }
     }
 
@@ -19,6 +21,7 @@ public class PuzzleActivator : MonoBehaviour
         if (collider.CompareTag("PuzzleCube"))
         {
             connectedMechanism.Deactivate();
+            lineMesh.Deactivate();
         }
     }
 }
