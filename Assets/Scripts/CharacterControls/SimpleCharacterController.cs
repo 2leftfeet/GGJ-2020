@@ -37,9 +37,9 @@ public class SimpleCharacterController : BaseCharacterController
             shouldJump = true;
         }
 
-        if (!doubleJumpAvailable)
+        if (!hasDoubleJump)
         {
-            hasDoubleJump = false;
+            doubleJumpAvailable = false;
         }
 
     }
