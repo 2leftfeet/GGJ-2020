@@ -7,12 +7,15 @@ public class LavaShot : MonoBehaviour
 
     private IEnumerator coroutine;
     Rigidbody rb;
-    public float upForce = 10f;
+    public float rndForceMin = 10f;
+    public float rndForceMax = 20f;
+    public float rndMin = 5f;
+    public float rndMax = 15f;
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody>();
-        coroutine = WaitAndShoot(5.0f);
+        coroutine = WaitAndShoot();
         StartCoroutine(coroutine);
     }
 
@@ -22,10 +25,11 @@ public class LavaShot : MonoBehaviour
         
     }
 
-    private IEnumerator WaitAndShoot(float waitTime)
+    private IEnumerator WaitAndShoot()
     {
         while (true)
         {
+            float waitTime = Random.Range(rndMin, rndMax);
             yield return new WaitForSeconds(waitTime);
             ShootUp();
         }
@@ -33,6 +37,7 @@ public class LavaShot : MonoBehaviour
 
     void ShootUp()
     {
-        rb.AddForce( new Vector3(0, 1, 0) * upForce);
+        float upForce = Random.Range(rndForceMin, rndForceMax);
+        rb.velocity = new Vector3(0, 1, 0) * upForce;
     }
 }
