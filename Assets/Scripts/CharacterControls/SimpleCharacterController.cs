@@ -4,7 +4,7 @@ using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody))]
 [RequireComponent(typeof(Collider))]
-public class SimpleCharacterController : MonoBehaviour
+public class SimpleCharacterController : BaseCharacterController
 {
     [SerializeField] private float speed = 10.0f;
     [SerializeField] private float gravity = 10.0f; //Let's create gravity manually so it's easier to tinker with
@@ -20,7 +20,7 @@ public class SimpleCharacterController : MonoBehaviour
 
     private bool doubleJumpAvailable = false;
 
-    [SerializeField] bool hasDoubleJump = false;
+    [SerializeField] public bool hasDoubleJump = false;
 
     private bool shouldJump = false;
 

@@ -22,6 +22,21 @@ public class CarriableObject : MonoBehaviour
         rigidbody.isKinematic = false;
     }
 
+    public virtual void ActivateEffect()
+    {
+
+    }
+
+    public virtual void OnEquip()
+    {
+
+    }
+
+    public virtual void OnUnequip()
+    {
+
+    }
+
     // Update is called once per frame
     void Update()
     {

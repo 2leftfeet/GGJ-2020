@@ -4,28 +4,25 @@ using UnityEngine;
 
 public class Laser : MonoBehaviour
 {
-    public Transform startPoint;
-    public Transform endPoint;
-    LineRenderer lr;
-
-    private void Start()
+    private LineRenderer lr;
+    // Start is called before the first frame update
+    void Start()
     {
         lr = GetComponent<LineRenderer>();
     }
 
-    private void Update()
+    // Update is called once per frame
+    void Update()
     {
-        lr.SetPosition(0, startPoint.position);
-        //lr.SetPosition(1, endPoint.position);
-
+        lr.SetPosition(0, transform.position);
         RaycastHit hit;
-        if (Physics.Raycast(startPoint.position, endPoint.position, out hit))
+        if (Physics.Raycast(transform.position, transform.forward, out hit))
         {
             if (hit.collider)
             {
                 lr.SetPosition(1, hit.point);
             }
         }
-        else lr.SetPosition(1, endPoint.position);
+        else lr.SetPosition(1, transform.forward * 5000);
     }
 }
