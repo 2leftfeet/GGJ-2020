@@ -4,51 +4,27 @@ ModelImporter:
   serializedVersion: 19300
   internalIDToNameTable:
   - first:
-      74: -3751220362434653543
-    second: Armature.001|hands_carry_idle
-  - first:
-      74: -974283913531558983
-    second: Armature.001|hands_carry_jump
-  - first:
-      74: 8965166412404031364
-    second: Armature.001|hands_carry_walk
-  - first:
-      74: 1850815305546201405
-    second: Armature.001|hands_idle
-  - first:
-      74: -6778783948699394650
-    second: Armature.001|hands_pickup
-  - first:
-      74: 4447357163860762224
-    second: Armature.001|hands_walk
-  - first:
       74: -7132635126582189261
     second: Armature|player_idle
   - first:
+      74: 5884387778608851648
+    second: Armature|player_idle_carry
+  - first:
       74: -4842910777444961514
     second: Armature|player_jump
+  - first:
+      74: -1201173828222890073
+    second: Armature|player_jump_carry
   - first:
       74: -3631624883862981994
     second: Armature|player_pickup
   - first:
       74: 3500756496469655525
     second: Armature|player_walk
-  externalObjects:
   - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: material_arms
-    second: {fileID: 2100000, guid: fe9880141f6254b01873229f95e90470, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: material_legs
-    second: {fileID: 2100000, guid: f4aef37c7a7ca4ce3b6a08b93ef66518, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: material_torso
-    second: {fileID: 2100000, guid: bb7a92128e337405faed21bead9a14d8, type: 2}
+      74: -452198469719468681
+    second: Armature|player_walk_carry
+  externalObjects: {}
   materials:
     materialImportMode: 1
     materialName: 0
