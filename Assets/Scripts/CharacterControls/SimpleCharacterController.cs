@@ -79,7 +79,7 @@ public class SimpleCharacterController : BaseCharacterController
         //Apply gravity
         rb.AddForce(Vector3.down * gravity);
 
-        if(rb.velocity.magnitude > 0.1f)
+        if(rb.velocity.magnitude > 1f)
         {
             transform.rotation = Quaternion.LookRotation(targetVelocity);
         }
