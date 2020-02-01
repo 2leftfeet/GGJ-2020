@@ -107,7 +107,8 @@ public class PuzzleMovingPlatform : PuzzleMechanism
 
     void OnCollisionExit(Collision col)
     {
-        col.collider.gameObject.transform.parent = null;
+        if(col.collider.gameObject.transform.parent == transform)
+            col.collider.gameObject.transform.parent = null;
     }
 
     IEnumerator StopMovingForSeconds(float t)
