@@ -60,5 +60,5 @@ sysinfo.txt
 crashlytics-build.properties
 
 # Other Unity Stuff
-*/Packages/com.unity.probuilder/Settings.json
+*/Settings.json
 
