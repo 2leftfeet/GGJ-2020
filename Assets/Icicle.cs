@@ -8,6 +8,7 @@ public class Icicle : MonoBehaviour
     public Transform Shadow;
     float startingDistance;
     float currentDistance;
+    public GameObject Player;
     // Start is called before the first frame update
     void Start()
     {
@@ -39,5 +40,13 @@ public class Icicle : MonoBehaviour
         float shadowSize = 1.5f - currentDistance / startingDistance;
         Vector3 newShadow = new Vector3(shadowSize, Shadow.transform.localScale.y, shadowSize);
         Shadow.localScale = newShadow;
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.gameObject == Player)
+        {
+            gameObject.GetComponent<Rigidbody>().useGravity = true;
+        }
     }
 }

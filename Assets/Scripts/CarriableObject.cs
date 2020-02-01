@@ -12,29 +12,19 @@ public class CarriableObject : MonoBehaviour
         rigidbody = GetComponent<Rigidbody>();
     }
 
-    public virtual void Pickup()
+    public virtual void ActivateEffect(CharacterHands characterHands)
+    {
+
+    }
+
+    public virtual void OnEquip(CharacterHands characterHands)
     {
         rigidbody.isKinematic = true;
     }
 
-    public virtual void Drop()
+    public virtual void OnUnequip(CharacterHands characterHands)
     {
         rigidbody.isKinematic = false;
-    }
-
-    public virtual void ActivateEffect()
-    {
-
-    }
-
-    public virtual void OnEquip()
-    {
-
-    }
-
-    public virtual void OnUnequip()
-    {
-
     }
 
     // Update is called once per frame

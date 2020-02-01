@@ -8,6 +8,9 @@ public class CharacterHands : MonoBehaviour
     public Transform sphereCastOffset;
     public CarriableObject carriableInHands;
 
+    public float lerpSpeed = 5f;
+    private bool mustLerp;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -17,11 +20,16 @@ public class CharacterHands : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // -- INPUT --
         if (carriableInHands)
         {
-            if (Input.GetKey(KeyCode.Space))
+            if (Input.GetKeyDown(KeyCode.Space))
             {
-                carriableInHands.ActivateEffect();
+                carriableInHands.ActivateEffect(this);
+            }
+            else if (Input.GetKeyDown(KeyCode.E))
+            {
+                Unequip();
             }
         }
         else
@@ -40,17 +48,39 @@ public class CharacterHands : MonoBehaviour
                 }
             }
         }
+
+        // -- OTHER --
+        if (mustLerp)
+        {
+            // A bit expensive lerp
+            carriableInHands.transform.localPosition = Vector3.Slerp(
+                carriableInHands.transform.localPosition, Vector3.zero, Time.deltaTime * lerpSpeed);
+
+            if (carriableInHands.transform.localPosition == Vector3.zero)
+                mustLerp = false;
+        }
     }
 
     void Equip(CarriableObject carriableObject)
     {
         carriableInHands = carriableObject;
-        carriableInHands.OnEquip();
+
+        carriableInHands.OnEquip(this);
+        carriableInHands.transform.SetParent(carryingPointOffset);
+
+        Physics.IgnoreCollision(GetComponent<Collider>(), carriableInHands.GetComponent<Collider>());
+
+        mustLerp = true;
     }
 
     void Unequip()
     {
+        carriableInHands.OnUnequip(this);
+        carriableInHands.transform.SetParent(null);
+
+        Physics.IgnoreCollision(GetComponent<Collider>(), carriableInHands.GetComponent<Collider>(), false);
+
         carriableInHands = null;
-        carriableInHands.OnUnequip();
+        mustLerp = false;
     }
 }
