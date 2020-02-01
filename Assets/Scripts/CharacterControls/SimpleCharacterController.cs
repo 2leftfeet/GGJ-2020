@@ -20,7 +20,7 @@ public class SimpleCharacterController : BaseCharacterController
 
     private bool doubleJumpAvailable = false;
 
-    [SerializeField] public bool hasDoubleJump = false;
+    //[SerializeField] public bool hasDoubleJump = false;
 
     private bool shouldJump = false;
 
