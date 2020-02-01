@@ -33,7 +33,22 @@ ModelImporter:
   - first:
       74: 3500756496469655525
     second: Armature|player_walk
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: material_arms
+    second: {fileID: 2100000, guid: fe9880141f6254b01873229f95e90470, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: material_legs
+    second: {fileID: 2100000, guid: f4aef37c7a7ca4ce3b6a08b93ef66518, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: material_torso
+    second: {fileID: 2100000, guid: bb7a92128e337405faed21bead9a14d8, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0
