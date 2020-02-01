@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -133,7 +133,6 @@ GameObject:
   - component: {fileID: 273614602}
   - component: {fileID: 273614601}
   - component: {fileID: 273614600}
-  - component: {fileID: 273614599}
   - component: {fileID: 273614598}
   m_Layer: 0
   m_Name: Cube
@@ -149,13 +148,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 273614596}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.182, y: 0, z: -0.553}
+  m_LocalRotation: {x: 0.022883117, y: -0.14238153, z: -0.030288866, w: 0.98908365}
+  m_LocalPosition: {x: 0.166, y: 0.0023, z: -0.4977}
   m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_Children: []
   m_Father: {fileID: 1971471625}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 2.1000001, y: -16.453001, z: -3.8120003}
 --- !u!114 &273614598
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -163,28 +162,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 273614596}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 06a75fd3e963a4b7eadd51aa7e9907be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   attractor: {fileID: 1971471626}
---- !u!54 &273614599
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 273614596}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!65 &273614600
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -257,7 +240,6 @@ GameObject:
   - component: {fileID: 289235242}
   - component: {fileID: 289235241}
   - component: {fileID: 289235240}
-  - component: {fileID: 289235239}
   - component: {fileID: 289235238}
   m_Layer: 0
   m_Name: Cube (1)
@@ -273,13 +255,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 289235236}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.182, y: 0.235, z: -0.44}
-  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
+  m_LocalRotation: {x: 0.1059868, y: -0.15830387, z: 0.07126758, w: 0.9790953}
+  m_LocalPosition: {x: 0.205, y: 0.24399999, z: -0.42}
+  m_LocalScale: {x: 0.099999994, y: 0.10000001, z: 0.099999994}
   m_Children: []
   m_Father: {fileID: 1971471625}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 13.303, y: -17.639, z: 6.2530003}
 --- !u!114 &289235238
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -287,28 +269,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 289235236}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 06a75fd3e963a4b7eadd51aa7e9907be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   attractor: {fileID: 1971471626}
---- !u!54 &289235239
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 289235236}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!65 &289235240
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -595,7 +561,7 @@ GameObject:
   - component: {fileID: 1749982296}
   - component: {fileID: 1749982295}
   m_Layer: 0
-  m_Name: SmallSphere
+  m_Name: GravityPlayer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -685,7 +651,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1749982286}
   m_LocalRotation: {x: 0.08717645, y: -0.13100572, z: -0.000941096, w: 0.98754084}
-  m_LocalPosition: {x: 0, y: 0, z: -29.8}
+  m_LocalPosition: {x: 10.7, y: 15.5, z: -26.3}
   m_LocalScale: {x: 1, y: 4.72, z: 1}
   m_Children:
   - {fileID: 340476124}
@@ -841,7 +807,7 @@ GameObject:
   - component: {fileID: 1971471622}
   - component: {fileID: 1971471621}
   - component: {fileID: 1971471626}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BigSphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
