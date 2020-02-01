@@ -14,6 +14,7 @@ public class Icicle : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Physics.IgnoreCollision(gameObject.GetComponent<BoxCollider>(), Player.GetComponent<CapsuleCollider>());
         rb = GetComponent<Rigidbody>();
         RaycastHit hit;
         if (Physics.Raycast(transform.position, -transform.up, out hit))
