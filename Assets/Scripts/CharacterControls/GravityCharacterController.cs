@@ -85,7 +85,7 @@ public class GravityCharacterController : BaseCharacterController
         //grounded = false;
     }
 
-    void OnCollisionEnter(Collision collision)
+    void OnCollisionStay(Collision collision)
     {
         if (collision.gameObject.layer == 8 // World layer //check the int value in layer manager(User Defined starts at 8) 
              && !grounded)
