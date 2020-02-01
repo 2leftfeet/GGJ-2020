@@ -36,11 +36,24 @@ public class PlayerController : MonoBehaviour
             }
         }
 
-        grounded = false;
+        //grounded = false;
     }
 
-    void OnCollisionStay()
+    void OnCollisionEnter(Collision collision)
     {
-        grounded = true;
+        if (collision.gameObject.layer == 8 // World layer //check the int value in layer manager(User Defined starts at 8) 
+             && !grounded)
+        {
+            grounded = true;
+        }
+    }
+
+    void OnCollisionExit(Collision collision)
+    {
+        if (collision.gameObject.layer == 8
+            && grounded)
+        {
+            grounded = false;
+        }
     }
 }
