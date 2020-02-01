@@ -4,35 +4,26 @@ ModelImporter:
   serializedVersion: 19300
   internalIDToNameTable:
   - first:
-      74: -3751220362434653543
-    second: Armature.001|hands_carry_idle
-  - first:
-      74: -974283913531558983
-    second: Armature.001|hands_carry_jump
-  - first:
-      74: 8965166412404031364
-    second: Armature.001|hands_carry_walk
-  - first:
-      74: 1850815305546201405
-    second: Armature.001|hands_idle
-  - first:
-      74: -6778783948699394650
-    second: Armature.001|hands_pickup
-  - first:
-      74: 4447357163860762224
-    second: Armature.001|hands_walk
-  - first:
       74: -7132635126582189261
     second: Armature|player_idle
   - first:
+      74: 5884387778608851648
+    second: Armature|player_idle_carry
+  - first:
       74: -4842910777444961514
     second: Armature|player_jump
+  - first:
+      74: -1201173828222890073
+    second: Armature|player_jump_carry
   - first:
       74: -3631624883862981994
     second: Armature|player_pickup
   - first:
       74: 3500756496469655525
     second: Armature|player_walk
+  - first:
+      74: -452198469719468681
+    second: Armature|player_walk_carry
   externalObjects: {}
   materials:
     materialImportMode: 1
