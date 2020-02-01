@@ -8,6 +8,7 @@ public class Icicle : MonoBehaviour
     public Transform Shadow;
     float startingDistance;
     float currentDistance;
+    LayerMask layerMask = ~(1 << 8);
     // Start is called before the first frame update
     void Start()
     {
@@ -26,7 +27,7 @@ public class Icicle : MonoBehaviour
     void Update()
     {
         RaycastHit hit;
-        if (Physics.Raycast(transform.position, -transform.up, out hit))
+        if (Physics.Raycast(transform.position, -transform.up, out hit, 1000f, layerMask))
         {
             if (hit.collider)
             {
