@@ -73,15 +73,17 @@ public class CharacterHands : MonoBehaviour
         StartCoroutine(ActivateLerp());
     }
 
-    void Unequip()
+    public void Unequip()
     {
-        carriableInHands.OnUnequip(this);
-        carriableInHands.transform.SetParent(null);
+        if (carriableInHands) { 
+            carriableInHands.OnUnequip(this);
+            carriableInHands.transform.SetParent(null);
 
-        Physics.IgnoreCollision(GetComponent<Collider>(), carriableInHands.GetComponent<Collider>(), false);
+            Physics.IgnoreCollision(GetComponent<Collider>(), carriableInHands.GetComponent<Collider>(), false);
 
-        carriableInHands = null;
-        mustLerp = false;
+            carriableInHands = null;
+            mustLerp = false;
+        }
     }
 
     IEnumerator ActivateLerp()
