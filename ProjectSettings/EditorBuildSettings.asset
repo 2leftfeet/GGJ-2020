@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/ElectroChallenge/ElectroCubeChallenge.unity
+    guid: 35b21f614f8f87b498ec53e8a8dbb33f
   m_configObjects: {}
