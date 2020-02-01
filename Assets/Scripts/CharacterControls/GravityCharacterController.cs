@@ -79,7 +79,9 @@ public class GravityCharacterController : BaseCharacterController
 
         if(rb.velocity.magnitude >= 0.5f)
         {
-            model.transform.rotation = Quaternion.LookRotation(targetVelocity, fb.transform.position - fb.attractor.transform.position);
+            if(targetVelocity.magnitude >= 0.5f)
+                model.transform.rotation = Quaternion.LookRotation(targetVelocity, fb.transform.position - fb.attractor.transform.position);
+         
         }
 
         //grounded = false;
