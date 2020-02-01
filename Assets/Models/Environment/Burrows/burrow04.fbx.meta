@@ -1,9 +1,14 @@
 fileFormatVersion: 2
-guid: e0916be56e0d4fa48bce50eeb0a52630
+guid: ee87da5bb3c74624c805ba83657a5b2a
 ModelImporter:
   serializedVersion: 19300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: burrow04_material
+    second: {fileID: 2100000, guid: 8e473707b845f2b46a9ddc3cca1b918d, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0
