@@ -61,4 +61,14 @@ public class PuzzleMovingPlatform : PuzzleMechanism
         return Mathf.PingPong(timer, value);
 
     }
+
+    void OnCollisionEnter(Collision col)
+    {
+        col.collider.gameObject.transform.parent = transform;
+    }
+
+    void OnCollisionExit(Collision col)
+    {
+        col.collider.gameObject.transform.parent = null;
+    }
 }
