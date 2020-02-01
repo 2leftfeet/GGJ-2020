@@ -59,3 +59,6 @@ sysinfo.txt
 # Crashlytics generated file
 crashlytics-build.properties
 
+# Other Unity Stuff
+*/com.unity.probuilder/Settings.json
+
