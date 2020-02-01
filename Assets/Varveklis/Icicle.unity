@@ -285,6 +285,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Icicle (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 4015128169466009330, guid: ebfc7521fdfd043bab39bc2907c9b4fe,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ebfc7521fdfd043bab39bc2907c9b4fe, type: 3}
 --- !u!1001 &298406162
@@ -358,6 +363,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Icicle (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4015128169466009330, guid: ebfc7521fdfd043bab39bc2907c9b4fe,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ebfc7521fdfd043bab39bc2907c9b4fe, type: 3}
@@ -704,6 +714,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Icicle (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 4015128169466009330, guid: ebfc7521fdfd043bab39bc2907c9b4fe,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ebfc7521fdfd043bab39bc2907c9b4fe, type: 3}
 --- !u!1 &1527111359
@@ -718,7 +733,7 @@ GameObject:
   - component: {fileID: 1527111362}
   - component: {fileID: 1527111361}
   - component: {fileID: 1527111360}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1176,6 +1191,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Icicle (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4015128169466009330, guid: ebfc7521fdfd043bab39bc2907c9b4fe,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ebfc7521fdfd043bab39bc2907c9b4fe, type: 3}

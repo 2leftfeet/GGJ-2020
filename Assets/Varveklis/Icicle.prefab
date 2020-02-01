@@ -220,6 +220,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Shadow: {fileID: 4015128170592365575}
   Player: {fileID: 0}
+  Explosion: {fileID: 6538122416610095161, guid: 54a0fa9d763694ebc8131207074fd8e0,
+    type: 3}
 --- !u!1 &4015128170592365572
 GameObject:
   m_ObjectHideFlags: 0

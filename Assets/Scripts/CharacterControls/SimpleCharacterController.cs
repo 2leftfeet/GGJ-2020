@@ -16,7 +16,6 @@ public class SimpleCharacterController : BaseCharacterController
     [SerializeField] float groundCheckRayDistance;
 
     private Rigidbody rb;
-    private bool grounded;
 
     private bool doubleJumpAvailable = false;
 
