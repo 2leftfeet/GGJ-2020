@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 0798da0bbe7ae8e4c9ef877836fc137c
+guid: 12a9734fd3df9f048aab20a6f0fdd248
 ModelImporter:
   serializedVersion: 19300
   internalIDToNameTable: []
@@ -7,8 +7,8 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: planet_material
-    second: {fileID: 2100000, guid: bd52a9ef3e3581048860e16127cc028b, type: 2}
+      name: ice_room
+    second: {fileID: 2100000, guid: 0ff7db82bad389c47a31e3424c46f7bd, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0

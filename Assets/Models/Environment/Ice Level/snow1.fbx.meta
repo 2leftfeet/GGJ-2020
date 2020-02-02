@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 0798da0bbe7ae8e4c9ef877836fc137c
+guid: 6abed5f13769a134da26d87d839e7ab0
 ModelImporter:
   serializedVersion: 19300
   internalIDToNameTable: []
@@ -7,8 +7,8 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: planet_material
-    second: {fileID: 2100000, guid: bd52a9ef3e3581048860e16127cc028b, type: 2}
+      name: snow
+    second: {fileID: 2100000, guid: a0c97b4acc1cfcf419665a8240c96ccf, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0

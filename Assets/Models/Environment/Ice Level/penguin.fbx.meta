@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 0798da0bbe7ae8e4c9ef877836fc137c
+guid: 327cf3169a4d20345832737443c0402d
 ModelImporter:
   serializedVersion: 19300
   internalIDToNameTable: []
@@ -7,8 +7,8 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: planet_material
-    second: {fileID: 2100000, guid: bd52a9ef3e3581048860e16127cc028b, type: 2}
+      name: penguin
+    second: {fileID: 2100000, guid: 36b59e59f46acea488237d12e9bf89e8, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0
