@@ -281,7 +281,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 680ea47f1ff04694986e39c449f8c4bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  transitionToSceneID: 0
+  transitionToSceneID: 5
   exitPointOffset: {x: 0, y: 0, z: 0}
 --- !u!65 &37435254
 BoxCollider:
@@ -19540,7 +19540,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1488161394}
-  m_LocalRotation: {x: -0.2669336, y: -0.00000091609985, z: 0.0000033074111, w: -0.96371496}
+  m_LocalRotation: {x: -0.26693356, y: -0.00000094482084, z: 0.0000033153665, w: -0.96371496}
   m_LocalPosition: {x: 6.9, y: 4.81, z: 11.799999}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -19947,7 +19947,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1541577526}
-  m_LocalRotation: {x: -0.2669336, y: -0.00000091609985, z: 0.0000033074111, w: -0.96371496}
+  m_LocalRotation: {x: -0.26693356, y: -0.00000094482084, z: 0.0000033153665, w: -0.96371496}
   m_LocalPosition: {x: 6.9, y: 4.81, z: 11.799999}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
