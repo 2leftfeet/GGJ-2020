@@ -5,6 +5,9 @@ using TMPro;
 
 public class UIEvents : MonoBehaviour
 {
+
+    public static UIEvents _instance = null;
+
     [SerializeField]
     private TextMeshProUGUI shipLeg;
 
@@ -16,6 +19,19 @@ public class UIEvents : MonoBehaviour
 
     [SerializeField]
     private TextMeshProUGUI rocketBooster;
+
+    public void Awake()
+    {
+        if(_instance == null)
+        {
+            _instance = this;
+            Debug.Log(_instance);
+        }
+        else
+        {
+            Destroy(this.gameObject);
+        }
+    }
 
     public void FoundShipLeg()
     {
