@@ -387,6 +387,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: icicle_drop
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 84dd568fdf1f6ac418e96b0150331788,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 84dd568fdf1f6ac418e96b0150331788, type: 3}
 --- !u!4 &561174056945960184 stripped
