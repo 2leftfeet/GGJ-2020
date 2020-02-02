@@ -13,17 +13,25 @@ public class SceneChanger : MonoBehaviour
     {
         if (col.gameObject.CompareTag("Player"))
         {
-            // Check if main world char instance has the object
-            var hands = col.GetComponent<CharacterHands>();
-            if (hands.carriableInHands && hands.GetComponent<SimpleCharacterController>())
-            {
-                hands.carriableInHands.GetComponent<PersistentObject>().sceneId = transitionToSceneID;
-                GravityCharacterController.instance.GetComponent<CharacterHands>().Equip(hands.carriableInHands, true);
-            }
 
-            col.gameObject.transform.position =  transform.position + exitPointOffset;
-            SceneManager.LoadScene(transitionToSceneID);
+            StartCoroutine(LoadScene(col));
         }
+    }
+
+    public IEnumerator LoadScene(Collider col)
+    {
+        TransitionController.instance.StartTransition();
+        yield return new WaitForSeconds(1.5f);
+        // Check if main world char instance has the object
+        var hands = col.GetComponent<CharacterHands>();
+        if (hands.carriableInHands && hands.GetComponent<SimpleCharacterController>())
+        {
+            hands.carriableInHands.GetComponent<PersistentObject>().sceneId = transitionToSceneID;
+            GravityCharacterController.instance.GetComponent<CharacterHands>().Equip(hands.carriableInHands, true);
+        }
+
+        col.gameObject.transform.position = transform.position + exitPointOffset;
+        SceneManager.LoadScene(transitionToSceneID);
     }
 
     void OnDrawGizmosSelected()
