@@ -4,11 +4,14 @@ using UnityEngine;
 
 public class CharacterHands : MonoBehaviour
 {
+
     public Transform carryingPointOffset;
     public Transform sphereCastOffset;
 
     public Transform modelTransform;
     public CarriableObject carriableInHands;
+
+    public AudioClip audioClip;
 
     public float lerpSpeed = 5f;
     private bool mustLerp;
@@ -80,7 +83,7 @@ public class CharacterHands : MonoBehaviour
                     CarriableObject carriableObject = hits[i].GetComponent<CarriableObject>();
                     if(carriableObject)
                     {
-                        Debug.Log("eyyy");
+                        AudioSource.PlayClipAtPoint(audioClip, transform.position);
                         Equip(carriableObject);
                         break;
                     }
@@ -100,7 +103,7 @@ public class CharacterHands : MonoBehaviour
         }
     }
 
-    void Equip(CarriableObject carriableObject)
+    public void Equip(CarriableObject carriableObject, bool forceNoLerp = false)
     {
         carriableInHands = carriableObject;
 
@@ -109,7 +112,17 @@ public class CharacterHands : MonoBehaviour
 
         Physics.IgnoreCollision(GetComponent<Collider>(), carriableInHands.GetComponent<Collider>());
 
-        StartCoroutine(ActivateLerp());
+        var persistence = carriableObject.GetComponent<PersistentObject>();
+        if (persistence)
+        {
+            persistence.stayInAllScenes = true;
+        }
+
+        if (!forceNoLerp)
+            StartCoroutine(ActivateLerp());
+        else
+            mustLerp = true;
+
     }
 
     public void Unequip()
@@ -117,6 +130,13 @@ public class CharacterHands : MonoBehaviour
         if (carriableInHands) { 
             carriableInHands.OnUnequip(this);
             carriableInHands.transform.SetParent(null);
+
+            var persistent = carriableInHands.GetComponent<PersistentObject>();
+            if (persistent)
+            {
+                DontDestroyOnLoad(persistent.gameObject);
+                persistent.stayInAllScenes = false;
+            }
 
             Physics.IgnoreCollision(GetComponent<Collider>(), carriableInHands.GetComponent<Collider>(), false);
             carriableInHands.GetComponent<Rigidbody>().AddForce(modelTransform.forward * 50);
