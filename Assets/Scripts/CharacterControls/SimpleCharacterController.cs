@@ -71,6 +71,7 @@ public class SimpleCharacterController : BaseCharacterController
             rb.velocity = new Vector3(rb.velocity.x, CalculateJumpVerticalSpeed(), rb.velocity.z);
             if(!grounded && doubleJumpAvailable)
             {
+                GetComponent<CharacterHands>().carriableInHands.GetComponent<BoosterModule>().PlayEffect();
                 doubleJumpAvailable = false;
             }
         }

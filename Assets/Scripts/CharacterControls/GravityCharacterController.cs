@@ -73,6 +73,7 @@ public class GravityCharacterController : BaseCharacterController
             rb.velocity = (fb.transform.position - fb.attractor.transform.position).normalized * jumpHeight;
             if (!grounded && doubleJumpAvailable)
             {
+                GetComponent<CharacterHands>().carriableInHands.GetComponent<BoosterModule>().PlayEffect();
                 doubleJumpAvailable = false;
             }
         }
