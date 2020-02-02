@@ -32,7 +32,7 @@ Transform:
   m_GameObject: {fileID: 3421434106060680583}
   m_LocalRotation: {x: -0.30875716, y: -0.002602822, z: 0.0013604694, w: 0.95113635}
   m_LocalPosition: {x: 0.53, y: 46.42, z: -2.67}
-  m_LocalScale: {x: 20, y: 20, z: 20}
+  m_LocalScale: {x: 20.00003, y: 20.000027, z: 20.000015}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -94,8 +94,8 @@ Rigidbody:
   m_GameObject: {fileID: 3421434106060680583}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
+  m_Drag: 0.3
+  m_AngularDrag: 0.3
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -126,6 +126,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b7d11b4b217fdc4ca2fbbfa3e12abc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spaceshipPart: 0
 --- !u!114 &6654786599350710305
 MonoBehaviour:
   m_ObjectHideFlags: 0

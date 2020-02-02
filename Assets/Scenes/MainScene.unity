@@ -18279,6 +18279,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: PinkBall
       objectReference: {fileID: 0}
+    - target: {fileID: 5912065102173292583, guid: 0478d293d88a1cb459214db0cd92e087,
+        type: 3}
+      propertyPath: m_Drag
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5912065102173292583, guid: 0478d293d88a1cb459214db0cd92e087,
+        type: 3}
+      propertyPath: m_AngularDrag
+      value: 0.3
+      objectReference: {fileID: 0}
     - target: {fileID: 5912065102173292586, guid: 0478d293d88a1cb459214db0cd92e087,
         type: 3}
       propertyPath: attractor
@@ -18373,6 +18383,16 @@ PrefabInstance:
       propertyPath: attractor
       value: 
       objectReference: {fileID: 634346370}
+    - target: {fileID: 6654786599350710316, guid: b0a3787762f5e914a9508fce12e225b1,
+        type: 3}
+      propertyPath: m_Drag
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6654786599350710316, guid: b0a3787762f5e914a9508fce12e225b1,
+        type: 3}
+      propertyPath: m_AngularDrag
+      value: 0.3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b0a3787762f5e914a9508fce12e225b1, type: 3}
 --- !u!33 &3244060536339835353
@@ -18952,6 +18972,16 @@ PrefabInstance:
       propertyPath: attractor
       value: 
       objectReference: {fileID: 634346370}
+    - target: {fileID: 2791569574324703065, guid: e41b3948965f30c4c8f37e7e20d05a79,
+        type: 3}
+      propertyPath: m_Drag
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2791569574324703065, guid: e41b3948965f30c4c8f37e7e20d05a79,
+        type: 3}
+      propertyPath: m_AngularDrag
+      value: 0.3
+      objectReference: {fileID: 0}
     - target: {fileID: 6168885487375913714, guid: e41b3948965f30c4c8f37e7e20d05a79,
         type: 3}
       propertyPath: m_Name
@@ -19482,6 +19512,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 20.000004
+      objectReference: {fileID: 0}
+    - target: {fileID: 8391408718698415668, guid: ff7a4c8b7862d6b4db0246b3854adcbb,
+        type: 3}
+      propertyPath: m_Drag
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8391408718698415668, guid: ff7a4c8b7862d6b4db0246b3854adcbb,
+        type: 3}
+      propertyPath: m_AngularDrag
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 8391408718698415673, guid: ff7a4c8b7862d6b4db0246b3854adcbb,
         type: 3}
