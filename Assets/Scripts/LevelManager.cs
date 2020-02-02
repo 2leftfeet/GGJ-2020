@@ -19,9 +19,9 @@ public class LevelManager : MonoBehaviour
         }
     }
 
-    public void LoadLevelAdditive(int levelIndex)
+    public void LoadLevel(int levelIndex)
     {
-        SceneManager.LoadScene(levelIndex, LoadSceneMode.Additive);
+        SceneManager.LoadScene(levelIndex);
     }
 
     public void UnloadLevel(int levelIndex)
