@@ -100,6 +100,7 @@ GameObject:
   - component: {fileID: 5557831404629038335}
   - component: {fileID: 5557831404629038275}
   - component: {fileID: 5557831404629038274}
+  - component: {fileID: -1995908028324687703}
   m_Layer: 5
   m_Name: TransitionCanvas
   m_TagString: Untagged
@@ -219,6 +220,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   transitionAnim: {fileID: 5557831404629038275}
+--- !u!114 &-1995908028324687703
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5557831404629038332}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c01bd0edef2a2e4283bffd8cb68860a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  uniqueString: UITransition
+  stayInAllScenes: 0
+  sceneId: 0
 --- !u!1 &5557831404659366460
 GameObject:
   m_ObjectHideFlags: 0
