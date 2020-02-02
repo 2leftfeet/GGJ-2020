@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class SpaceshipFixing : MonoBehaviour
 {
+    [SerializeField] AudioClip fixSound;
+
     [SerializeField] GameObject brokenLeg;
     [SerializeField] GameObject fixedLeg;
 
@@ -19,22 +21,26 @@ public class SpaceshipFixing : MonoBehaviour
     {
         brokenLeg.SetActive(false);
         fixedLeg.SetActive(true);
+        AudioSource.PlayClipAtPoint(fixSound, transform.position);
     }
 
     public void fixBooster()
     {
         brokenBooster.SetActive(false);
         fixedBooster.SetActive(true);
+        AudioSource.PlayClipAtPoint(fixSound, transform.position);
     }
 
     public void fixPowerCube()
     {
         brokenCube.SetActive(false);
         fixedCube.SetActive(true);
+        AudioSource.PlayClipAtPoint(fixSound, transform.position);
     }
 
     public void fixFuel()
     {
         brokenCanister.SetActive(false);
+        AudioSource.PlayClipAtPoint(fixSound, transform.position);
     }
  }
