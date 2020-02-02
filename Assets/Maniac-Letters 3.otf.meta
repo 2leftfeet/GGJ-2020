@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: da8dfe29007234585a0e83ee6e7d28f6
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Maniac Letters
+  fontNames:
+  - Maniac Letters
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: aa160c9598a0048c4a4ee3cc8ee8a204, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
