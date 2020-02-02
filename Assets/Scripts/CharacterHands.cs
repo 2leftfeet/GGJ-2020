@@ -118,6 +118,12 @@ public class CharacterHands : MonoBehaviour
             carriableInHands.OnUnequip(this);
             carriableInHands.transform.SetParent(null);
 
+            var persistent = carriableInHands.GetComponent<PersistentObject>();
+            if (persistent)
+            {
+                DontDestroyOnLoad(persistent.gameObject);
+            }
+
             Physics.IgnoreCollision(GetComponent<Collider>(), carriableInHands.GetComponent<Collider>(), false);
             carriableInHands.GetComponent<Rigidbody>().AddForce(modelTransform.forward * 50);
 

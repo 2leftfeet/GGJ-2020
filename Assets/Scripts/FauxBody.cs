@@ -25,6 +25,11 @@ public class FauxBody : MonoBehaviour
         }
         myTransform = transform;
     }
+    void OnLevelWasLoaded(int levelIndex)
+    {
+        Debug.Log("reee");
+        Start();
+    }
 
     // Update is called once per frame
     void Update()
