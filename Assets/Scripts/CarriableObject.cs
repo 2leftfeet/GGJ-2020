@@ -2,8 +2,18 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+public enum SpaceshipPart
+{
+    None,
+    Leg,
+    Booster,
+    Cube,
+    Fuel
+};
+
 public class CarriableObject : MonoBehaviour
 {
+    public SpaceshipPart spaceshipPart = SpaceshipPart.None;
     private Rigidbody rigidbody;
 
     // Start is called before the first frame update

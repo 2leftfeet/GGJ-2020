@@ -13,6 +13,9 @@ public class CharacterHands : MonoBehaviour
     public float lerpSpeed = 5f;
     private bool mustLerp;
 
+    private bool nearSpaceship;
+    private SpaceshipFixing spaceship;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -25,6 +28,38 @@ public class CharacterHands : MonoBehaviour
         // -- INPUT --
         if (carriableInHands)
         {
+
+            //Special case where we are near the spaceship and are carrying a spaceship part
+            if (nearSpaceship)
+            {
+                if (Input.GetKeyDown(KeyCode.E))
+                {
+                    if(carriableInHands.spaceshipPart != SpaceshipPart.None)
+                    {
+                        switch (carriableInHands.spaceshipPart)
+                        {
+                            case SpaceshipPart.Booster:
+                                spaceship.fixBooster();
+                                break;
+                            case SpaceshipPart.Cube:
+                                spaceship.fixPowerCube();
+                                break;
+                            case SpaceshipPart.Fuel:
+                                spaceship.fixFuel();
+                                break;
+                            case SpaceshipPart.Leg:
+                                spaceship.fixLeg();
+                                break;
+                                
+                        }
+                        Destroy(carriableInHands.gameObject);
+                        carriableInHands = null;
+                        Unequip();
+                        return;
+                    }
+                }
+            }
+
             if (Input.GetKeyDown(KeyCode.Space))
             {
                 carriableInHands.ActivateEffect(this);
@@ -89,6 +124,24 @@ public class CharacterHands : MonoBehaviour
 
             carriableInHands = null;
             mustLerp = false;
+        }
+    }
+
+    void OnTriggerEnter(Collider col)
+    {
+        if (col.gameObject.CompareTag("Spaceship"))
+        {
+            nearSpaceship = true;
+            spaceship = col.gameObject.GetComponent<SpaceshipFixing>();
+        }
+    }
+
+    void OnTriggerExit(Collider col)
+    {
+        if (col.gameObject.CompareTag("Spaceship"))
+        {
+            nearSpaceship = false;
+            spaceship = null;
         }
     }
 
