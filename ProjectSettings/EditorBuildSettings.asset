@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: Assets/Scenes/BoosterLevelChallenge.unity
     guid: 658d22defb65342178ebef0c9727f2f6
   - enabled: 1
-    path: Assets/Scenes/IceChallenge2.unity
+    path: Assets/Scenes/IceChallenge Part 1.unity
     guid: 6fe2f05918af14e57b2ed3299eb62464
   - enabled: 1
     path: Assets/ElectroChallenge/ElectroCubeChallenge.unity
