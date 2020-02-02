@@ -4,11 +4,14 @@ using UnityEngine;
 
 public class CharacterHands : MonoBehaviour
 {
+
     public Transform carryingPointOffset;
     public Transform sphereCastOffset;
 
     public Transform modelTransform;
     public CarriableObject carriableInHands;
+
+    public AudioClip audioClip;
 
     public float lerpSpeed = 5f;
     private bool mustLerp;
@@ -80,7 +83,7 @@ public class CharacterHands : MonoBehaviour
                     CarriableObject carriableObject = hits[i].GetComponent<CarriableObject>();
                     if(carriableObject)
                     {
-                        Debug.Log("eyyy");
+                        AudioSource.PlayClipAtPoint(audioClip, transform.position);
                         Equip(carriableObject);
                         break;
                     }
