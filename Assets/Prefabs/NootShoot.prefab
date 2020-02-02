@@ -60,7 +60,7 @@ GameObject:
   - component: {fileID: 9022894633094909275}
   m_Layer: 0
   m_Name: Noot1
-  m_TagString: Untagged
+  m_TagString: Death
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -223,7 +223,7 @@ GameObject:
   - component: {fileID: 9022894633551551510}
   m_Layer: 0
   m_Name: Noot2
-  m_TagString: Untagged
+  m_TagString: Death
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
