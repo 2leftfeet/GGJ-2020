@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerDeath : MonoBehaviour
 {
@@ -36,5 +37,6 @@ public class PlayerDeath : MonoBehaviour
     {
         TransitionController.instance.StartTransition();
         yield return new WaitForSeconds(1.5f);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }
