@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class BoosterModule : CarriableObject
 {
+    public ParticleSystem effect;
+
     public override void OnEquip(CharacterHands characterHands)
     {
         base.OnEquip(characterHands);
@@ -16,5 +18,10 @@ public class BoosterModule : CarriableObject
         base.OnUnequip(characterHands);
 
         characterHands.GetComponent<BaseCharacterController>().hasDoubleJump = false;
+    }
+
+    public void PlayEffect()
+    {
+        effect.Play();
     }
 }
