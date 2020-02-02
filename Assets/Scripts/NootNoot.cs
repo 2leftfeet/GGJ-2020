@@ -7,15 +7,15 @@ public class NootNoot : MonoBehaviour
     private IEnumerator coroutine;
     Rigidbody rb;
     public Transform Target;
-    //public GameObject otherNoot;
+    public GameObject otherNoot;
     Vector3 direction;
-    public float speed = 1f;
+    //public float speed = 1f;
     Vector3 initialPosition;
     public bool canSlide = false;
     // Start is called before the first frame update
     void Start()
     {
-        //Physics.IgnoreCollision(gameObject.GetComponent<BoxCollider>(), otherNoot.GetComponent<BoxCollider>());
+        Physics.IgnoreCollision(gameObject.GetComponent<BoxCollider>(), otherNoot.GetComponent<BoxCollider>());
         initialPosition = transform.position;
         rb = gameObject.GetComponent<Rigidbody>();
         var heading = Target.position - transform.position;
@@ -39,7 +39,7 @@ public class NootNoot : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //float speed = Random.Range(1f, 5f);
+        float speed = Random.Range(3f, 5f);
         if(canSlide) rb.AddForce(direction * speed);
     }
 
