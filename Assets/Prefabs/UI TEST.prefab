@@ -641,6 +641,7 @@ GameObject:
   - component: {fileID: 5206533542645130765}
   - component: {fileID: 2378890302061437455}
   - component: {fileID: 5530774097811645441}
+  - component: {fileID: 649383022}
   m_Layer: 5
   m_Name: UI TEST
   m_TagString: Untagged
@@ -741,9 +742,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shipLeg: {fileID: 862674980582566060}
-  fuelCanister: {fileID: 0}
-  energyCube: {fileID: 0}
-  rocketBooster: {fileID: 0}
+  fuelCanister: {fileID: 4790097657947800747}
+  energyCube: {fileID: 390924643299518335}
+  rocketBooster: {fileID: 5545984964471143923}
+--- !u!114 &649383022
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8217753743637062145}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c01bd0edef2a2e4283bffd8cb68860a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  uniqueString: UI
+  stayInAllScenes: 1
+  sceneId: 0
 --- !u!1 &8392109782493555182
 GameObject:
   m_ObjectHideFlags: 0

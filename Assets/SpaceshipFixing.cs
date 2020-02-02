@@ -21,6 +21,7 @@ public class SpaceshipFixing : MonoBehaviour
     {
         brokenLeg.SetActive(false);
         fixedLeg.SetActive(true);
+        UIEvents._instance.FoundShipLeg();
         AudioSource.PlayClipAtPoint(fixSound, transform.position);
     }
 
@@ -28,6 +29,7 @@ public class SpaceshipFixing : MonoBehaviour
     {
         brokenBooster.SetActive(false);
         fixedBooster.SetActive(true);
+        UIEvents._instance.FoundRocketBoost();
         AudioSource.PlayClipAtPoint(fixSound, transform.position);
     }
 
@@ -35,12 +37,14 @@ public class SpaceshipFixing : MonoBehaviour
     {
         brokenCube.SetActive(false);
         fixedCube.SetActive(true);
+        UIEvents._instance.FoundPinkCube();
         AudioSource.PlayClipAtPoint(fixSound, transform.position);
     }
 
     public void fixFuel()
     {
         brokenCanister.SetActive(false);
+        UIEvents._instance.FoundFuelCanister();
         AudioSource.PlayClipAtPoint(fixSound, transform.position);
     }
  }

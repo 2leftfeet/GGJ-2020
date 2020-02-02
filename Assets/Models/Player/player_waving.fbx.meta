@@ -13,9 +13,6 @@ ModelImporter:
       74: 5884387778608851648
     second: Armature|player_idle_carry
   - first:
-      74: -4842910777444961514
-    second: Armature|player_jump
-  - first:
       74: -7301217221496835192
     second: Armature|player_jump.001
   - first:
