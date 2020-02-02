@@ -109,7 +109,7 @@ GameObject:
   - component: {fileID: 4015128169466009288}
   m_Layer: 0
   m_Name: Icicle
-  m_TagString: Untagged
+  m_TagString: Death
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -189,7 +189,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 0.8625307, z: 1}
+  m_Size: {x: 1, y: 4.44, z: 1}
   m_Center: {x: 0, y: 0.7345748, z: 0}
 --- !u!54 &4015128169466009293
 Rigidbody:
@@ -369,12 +369,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 84dd568fdf1f6ac418e96b0150331788,
         type: 3}
-      propertyPath: m_LocalScale.y
+      propertyPath: m_LocalScale.x
       value: 300
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 84dd568fdf1f6ac418e96b0150331788,
         type: 3}
-      propertyPath: m_LocalScale.x
+      propertyPath: m_LocalScale.y
       value: 300
       objectReference: {fileID: 0}
     - target: {fileID: -1504981713932161579, guid: 84dd568fdf1f6ac418e96b0150331788,

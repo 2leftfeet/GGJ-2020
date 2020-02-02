@@ -14,7 +14,7 @@ public class Icicle : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Physics.IgnoreCollision(gameObject.GetComponent<BoxCollider>(), Player.GetComponent<CapsuleCollider>());
+        //Physics.IgnoreCollision(gameObject.GetComponent<BoxCollider>(), Player.GetComponent<CapsuleCollider>());
         rb = GetComponent<Rigidbody>();
         RaycastHit hit;
         if (Physics.Raycast(transform.position, -transform.up, out hit))
@@ -53,6 +53,14 @@ public class Icicle : MonoBehaviour
         {
             rb.useGravity = true;
             Shadow.gameObject.SetActive(true);
+        }
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.layer == 8) // World layer //check the int value in layer manager(User Defined starts at 8))
+        {
+            gameObject.tag = "Untagged";
         }
     }
 }
