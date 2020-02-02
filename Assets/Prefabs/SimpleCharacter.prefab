@@ -169,7 +169,7 @@ MonoBehaviour:
   sphereCastOffset: {fileID: 484343125}
   modelTransform: {fileID: 5006512736816543272}
   carriableInHands: {fileID: 0}
-  audioClip: {fileID: 8300000, guid: 41726f6735f52bd4a872e8928ebb0c2a, type: 3}
+  audioClip: {fileID: 8300000, guid: c64e59cbae6be5e419e13f0cdb96059d, type: 3}
   lerpSpeed: 15
 --- !u!114 &1229107666
 MonoBehaviour:

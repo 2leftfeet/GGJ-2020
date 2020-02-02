@@ -2928,6 +2928,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bcc7c8c87ead0fd46b648d86adb6fd4b, type: 3}
+--- !u!1 &462127742 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2622823224982002922, guid: bcc7c8c87ead0fd46b648d86adb6fd4b,
+    type: 3}
+  m_PrefabInstance: {fileID: 462127741}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &462127743
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 462127742}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c01bd0edef2a2e4283bffd8cb68860a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  uniqueString: Leg
+  stayInAllScenes: 0
+  sceneId: 0
 --- !u!1 &469803184
 GameObject:
   m_ObjectHideFlags: 0
@@ -4670,7 +4691,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 754421558}
-  m_LocalRotation: {x: -0.26693356, y: -0.00000094482226, z: 0.0000033153713, w: -0.96371496}
+  m_LocalRotation: {x: -0.2669336, y: -0.00000091610127, z: 0.000003307416, w: -0.96371496}
   m_LocalPosition: {x: 4.78, y: 3, z: 15.709999}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -5729,6 +5750,7 @@ GameObject:
   - component: {fileID: 1081703518}
   - component: {fileID: 1081703517}
   - component: {fileID: 1081703516}
+  - component: {fileID: 1081703520}
   m_Layer: 0
   m_Name: Fog (1)
   m_TagString: Untagged
@@ -5744,8 +5766,8 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1081703515}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
+  m_IsTrigger: 1
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -5810,6 +5832,20 @@ Transform:
   m_Father: {fileID: 755199533}
   m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 2.742, z: 0}
+--- !u!114 &1081703520
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1081703515}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 680ea47f1ff04694986e39c449f8c4bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  transitionToSceneID: 0
+  exitPointOffset: {x: 0, y: 0, z: 0}
 --- !u!1 &1085460419
 GameObject:
   m_ObjectHideFlags: 0
@@ -8374,7 +8410,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1908446182}
-  m_LocalRotation: {x: -0.26693356, y: -0.00000094482226, z: 0.0000033153713, w: -0.96371496}
+  m_LocalRotation: {x: -0.2669336, y: -0.00000091610127, z: 0.000003307416, w: -0.96371496}
   m_LocalPosition: {x: 4.78, y: 3, z: 15.709999}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
