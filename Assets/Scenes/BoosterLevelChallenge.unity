@@ -199,6 +199,8 @@ GameObject:
   - component: {fileID: 37435252}
   - component: {fileID: 37435251}
   - component: {fileID: 37435250}
+  - component: {fileID: 37435253}
+  - component: {fileID: 37435254}
   m_Layer: 8
   m_Name: Cube (1)
   m_TagString: Untagged
@@ -267,6 +269,33 @@ Transform:
   m_Father: {fileID: 19670409}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 3.256, z: 0}
+--- !u!114 &37435253
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 37435249}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 680ea47f1ff04694986e39c449f8c4bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  transitionToSceneID: 0
+  exitPointOffset: {x: 0, y: 0, z: 0}
+--- !u!65 &37435254
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 37435249}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.0000001, y: 1, z: 1}
+  m_Center: {x: -0.0000076293945, y: 0, z: -0.0000009536743}
 --- !u!1001 &83269546
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1563,7 +1592,7 @@ Transform:
   m_LocalScale: {x: 196.41087, y: 196.41087, z: 196.41087}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 37
+  m_RootOrder: 39
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!114 &240632688
 MonoBehaviour:
@@ -8998,7 +9027,7 @@ Transform:
   m_Children:
   - {fileID: 173418535}
   m_Father: {fileID: 0}
-  m_RootOrder: 42
+  m_RootOrder: 45
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &814621154
 PrefabInstance:
@@ -13227,7 +13256,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 36
+  m_RootOrder: 38
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
 --- !u!1 &907057430
 GameObject:
@@ -17063,7 +17092,7 @@ Transform:
   m_Children:
   - {fileID: 955971860}
   m_Father: {fileID: 0}
-  m_RootOrder: 40
+  m_RootOrder: 42
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!43 &913292614
 Mesh:
@@ -17529,7 +17558,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 33
+  m_RootOrder: 34
   m_LocalEulerAnglesHint: {x: 3.288, y: 4.1210003, z: 0}
 --- !u!1 &992348693
 GameObject:
@@ -18241,7 +18270,7 @@ Transform:
   m_LocalScale: {x: 92.53057, y: 30.382643, z: 49.68474}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 38
+  m_RootOrder: 40
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
 --- !u!1001 &1145709496
 PrefabInstance:
@@ -18732,7 +18761,7 @@ Transform:
   - {fileID: 295044637}
   - {fileID: 699577857}
   m_Father: {fileID: 0}
-  m_RootOrder: 45
+  m_RootOrder: 47
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1343034578
 PrefabInstance:
@@ -19511,7 +19540,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1488161394}
-  m_LocalRotation: {x: -0.2669336, y: -0.0000009160998, z: 0.0000033074111, w: -0.96371496}
+  m_LocalRotation: {x: -0.2669336, y: -0.00000091609985, z: 0.0000033074111, w: -0.96371496}
   m_LocalPosition: {x: 6.9, y: 4.81, z: 11.799999}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -19918,13 +19947,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1541577526}
-  m_LocalRotation: {x: -0.2669336, y: -0.0000009160998, z: 0.0000033074111, w: -0.96371496}
+  m_LocalRotation: {x: -0.2669336, y: -0.00000091609985, z: 0.0000033074111, w: -0.96371496}
   m_LocalPosition: {x: 6.9, y: 4.81, z: 11.799999}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2032750740}
   m_Father: {fileID: 0}
-  m_RootOrder: 34
+  m_RootOrder: 35
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1563165129
 GameObject:
@@ -23851,7 +23880,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 39
+  m_RootOrder: 41
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1620618332
 GameObject:
@@ -24268,7 +24297,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 43
+  m_RootOrder: 46
   m_LocalEulerAnglesHint: {x: 106.629, y: 87.704994, z: -72.44098}
 --- !u!1 &1815182709
 GameObject:
@@ -24598,7 +24627,7 @@ PrefabInstance:
     - target: {fileID: 2269436634324405852, guid: 837e78b4c664e3b428928abcbd6ac003,
         type: 3}
       propertyPath: m_RootOrder
-      value: 35
+      value: 36
       objectReference: {fileID: 0}
     - target: {fileID: 2269436634324405852, guid: 837e78b4c664e3b428928abcbd6ac003,
         type: 3}
@@ -24869,7 +24898,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 34
+  m_RootOrder: 37
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1992715983
 GameObject:
@@ -25030,7 +25059,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 41
+  m_RootOrder: 43
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2023399973
 GameObject:
@@ -25665,3 +25694,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5ec22a0ab6a68ff47b39accc4c5eeb41, type: 3}
+--- !u!1 &4284249799154337484 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5212172648059438232, guid: 5ec22a0ab6a68ff47b39accc4c5eeb41,
+    type: 3}
+  m_PrefabInstance: {fileID: 4284249799154337483}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &4284249799154337485
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4284249799154337484}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c01bd0edef2a2e4283bffd8cb68860a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  uniqueString: Booster
+  stayInAllScenes: 0
+  sceneId: 0
