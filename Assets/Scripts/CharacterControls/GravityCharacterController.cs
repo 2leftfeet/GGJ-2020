@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class GravityCharacterController : BaseCharacterController
 {
+    public static GravityCharacterController instance;
+
     public GameObject model;
 
     public float moveSpeed = 15;
@@ -17,6 +19,18 @@ public class GravityCharacterController : BaseCharacterController
 
     private bool doubleJumpAvailable;
     private bool shouldJump;
+
+    void Awake()
+    {
+        if (instance)
+        {
+            Destroy(gameObject);
+        }
+        else
+        {
+            instance = this;
+        }
+    }
 
     // Start is called before the first frame update
     void Start()
