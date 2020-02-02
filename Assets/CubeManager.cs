@@ -7,7 +7,11 @@ public class CubeManager : MonoBehaviour
     [SerializeField] GameObject[] cubes;
     [SerializeField] Vector3[] positions;
 
+    [SerializeField] GameObject powerCube;
+    [SerializeField] Vector3 powerCubePosition;
+
     [SerializeField] GameObject prefab;
+    [SerializeField] GameObject powerCubePrefab;
     private int length;
     
     void Start()
@@ -23,6 +27,11 @@ public class CubeManager : MonoBehaviour
             {
                 cubes[i] = Instantiate(prefab, positions[i], Quaternion.identity);
             }
-        }   
+        }
+
+        if (!powerCube)
+        {
+            powerCube = Instantiate(powerCubePrefab, powerCubePosition, Quaternion.identity);
+        }
     }
 }

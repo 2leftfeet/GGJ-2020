@@ -8,18 +8,31 @@ public class FauxBody : MonoBehaviour
     public bool lockedRotation = true;
     private Transform myTransform;
     private Rigidbody rb;
+
     // Start is called before the first frame update
     void Start()
     {
+        attractor = FindObjectOfType<FauxGravityAttractor>();
         rb = gameObject.GetComponent<Rigidbody>();
         if(lockedRotation) rb.constraints = RigidbodyConstraints.FreezeRotation;
-        rb.useGravity = false;
+        if (attractor)
+        {
+            rb.useGravity = false;
+        }
+        else
+        {
+            rb.useGravity = true;
+        }
         myTransform = transform;
     }
 
     // Update is called once per frame
     void Update()
     {
-        attractor.Attract(myTransform, lockedRotation);
+        if (attractor)
+        {
+            attractor.Attract(myTransform, lockedRotation);
+
+        }
     }
 }

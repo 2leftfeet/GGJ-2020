@@ -25,6 +25,7 @@ public class Icicle : MonoBehaviour
             }
 
         }
+        Shadow.gameObject.SetActive(false);
     }
 
     // Update is called once per frame
@@ -51,6 +52,7 @@ public class Icicle : MonoBehaviour
         if(other.gameObject == Player)
         {
             rb.useGravity = true;
+            Shadow.gameObject.SetActive(true);
         }
     }
 }
