@@ -100,7 +100,7 @@ public class CharacterHands : MonoBehaviour
         }
     }
 
-    void Equip(CarriableObject carriableObject)
+    public void Equip(CarriableObject carriableObject, bool forceNoLerp = false)
     {
         carriableInHands = carriableObject;
 
@@ -109,7 +109,17 @@ public class CharacterHands : MonoBehaviour
 
         Physics.IgnoreCollision(GetComponent<Collider>(), carriableInHands.GetComponent<Collider>());
 
-        StartCoroutine(ActivateLerp());
+        var persistence = carriableObject.GetComponent<PersistentObject>();
+        if (persistence)
+        {
+            persistence.stayInAllScenes = true;
+        }
+
+        if (!forceNoLerp)
+            StartCoroutine(ActivateLerp());
+        else
+            mustLerp = true;
+
     }
 
     public void Unequip()
@@ -122,6 +132,7 @@ public class CharacterHands : MonoBehaviour
             if (persistent)
             {
                 DontDestroyOnLoad(persistent.gameObject);
+                persistent.stayInAllScenes = false;
             }
 
             Physics.IgnoreCollision(GetComponent<Collider>(), carriableInHands.GetComponent<Collider>(), false);

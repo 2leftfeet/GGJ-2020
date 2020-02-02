@@ -29,11 +29,11 @@ public class PersistenceManager : MonoBehaviour
     {
         foreach(KeyValuePair<string, PersistentSet> set in persistentSets)
         {
-            if (set.Value.levelIndex == level)
+            if (set.Value.persObj.sceneId == level)
                 set.Value.gameObject.SetActive(true);
-            else
+            else if (!set.Value.persObj.stayInAllScenes)
                 set.Value.gameObject.SetActive(false);
-        }
+        }   
     }
 
     public void RegisterGO(GameObject go, string uniqueString)
@@ -41,7 +41,7 @@ public class PersistenceManager : MonoBehaviour
         PersistentSet ps = new PersistentSet()
         {
             gameObject = go,
-            levelIndex = go.scene.buildIndex
+            persObj = go.GetComponent<PersistentObject>()
         };
 
         if (!persistentSets.ContainsKey(uniqueString))
@@ -56,9 +56,9 @@ public class PersistenceManager : MonoBehaviour
         }
     }
 
-    private struct PersistentSet
+    private class PersistentSet
     {
         public GameObject gameObject;
-        public int levelIndex;
+        public PersistentObject persObj;
     }
 }
