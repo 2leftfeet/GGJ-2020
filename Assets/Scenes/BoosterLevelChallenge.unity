@@ -17486,76 +17486,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 390924643299518335, guid: 228e512e74036425ea4c6ea93ecfd03c,
-        type: 3}
-      propertyPath: m_textInfo.characterCount
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 390924643299518335, guid: 228e512e74036425ea4c6ea93ecfd03c,
-        type: 3}
-      propertyPath: m_textInfo.spaceCount
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 390924643299518335, guid: 228e512e74036425ea4c6ea93ecfd03c,
-        type: 3}
-      propertyPath: m_textInfo.wordCount
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 390924643299518335, guid: 228e512e74036425ea4c6ea93ecfd03c,
-        type: 3}
-      propertyPath: m_textInfo.lineCount
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 390924643299518335, guid: 228e512e74036425ea4c6ea93ecfd03c,
-        type: 3}
-      propertyPath: m_textInfo.pageCount
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 862674980582566060, guid: 228e512e74036425ea4c6ea93ecfd03c,
-        type: 3}
-      propertyPath: m_textInfo.characterCount
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 862674980582566060, guid: 228e512e74036425ea4c6ea93ecfd03c,
-        type: 3}
-      propertyPath: m_textInfo.spaceCount
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 862674980582566060, guid: 228e512e74036425ea4c6ea93ecfd03c,
-        type: 3}
-      propertyPath: m_textInfo.wordCount
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 862674980582566060, guid: 228e512e74036425ea4c6ea93ecfd03c,
-        type: 3}
-      propertyPath: m_textInfo.lineCount
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 862674980582566060, guid: 228e512e74036425ea4c6ea93ecfd03c,
-        type: 3}
-      propertyPath: m_textInfo.pageCount
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2966738898951751153, guid: 228e512e74036425ea4c6ea93ecfd03c,
-        type: 3}
-      propertyPath: m_textInfo.characterCount
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2966738898951751153, guid: 228e512e74036425ea4c6ea93ecfd03c,
-        type: 3}
-      propertyPath: m_textInfo.wordCount
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2966738898951751153, guid: 228e512e74036425ea4c6ea93ecfd03c,
-        type: 3}
-      propertyPath: m_textInfo.lineCount
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2966738898951751153, guid: 228e512e74036425ea4c6ea93ecfd03c,
-        type: 3}
-      propertyPath: m_textInfo.pageCount
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 3089468615540256878, guid: 228e512e74036425ea4c6ea93ecfd03c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -17659,56 +17589,6 @@ PrefabInstance:
     - target: {fileID: 3089468615540256878, guid: 228e512e74036425ea4c6ea93ecfd03c,
         type: 3}
       propertyPath: m_Pivot.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4790097657947800747, guid: 228e512e74036425ea4c6ea93ecfd03c,
-        type: 3}
-      propertyPath: m_textInfo.characterCount
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4790097657947800747, guid: 228e512e74036425ea4c6ea93ecfd03c,
-        type: 3}
-      propertyPath: m_textInfo.spaceCount
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4790097657947800747, guid: 228e512e74036425ea4c6ea93ecfd03c,
-        type: 3}
-      propertyPath: m_textInfo.wordCount
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4790097657947800747, guid: 228e512e74036425ea4c6ea93ecfd03c,
-        type: 3}
-      propertyPath: m_textInfo.lineCount
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4790097657947800747, guid: 228e512e74036425ea4c6ea93ecfd03c,
-        type: 3}
-      propertyPath: m_textInfo.pageCount
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5545984964471143923, guid: 228e512e74036425ea4c6ea93ecfd03c,
-        type: 3}
-      propertyPath: m_textInfo.characterCount
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5545984964471143923, guid: 228e512e74036425ea4c6ea93ecfd03c,
-        type: 3}
-      propertyPath: m_textInfo.spaceCount
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5545984964471143923, guid: 228e512e74036425ea4c6ea93ecfd03c,
-        type: 3}
-      propertyPath: m_textInfo.wordCount
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5545984964471143923, guid: 228e512e74036425ea4c6ea93ecfd03c,
-        type: 3}
-      propertyPath: m_textInfo.lineCount
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5545984964471143923, guid: 228e512e74036425ea4c6ea93ecfd03c,
-        type: 3}
-      propertyPath: m_textInfo.pageCount
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8217753743637062145, guid: 228e512e74036425ea4c6ea93ecfd03c,
@@ -18091,7 +17971,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1488161394}
-  m_LocalRotation: {x: -0.26693356, y: -0.00000094482084, z: 0.0000033153665, w: -0.96371496}
+  m_LocalRotation: {x: -0.2669336, y: -0.0000009160998, z: 0.0000033074111, w: -0.96371496}
   m_LocalPosition: {x: 6.9, y: 4.81, z: 11.799999}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -18498,7 +18378,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1541577526}
-  m_LocalRotation: {x: -0.26693356, y: -0.00000094482084, z: 0.0000033153665, w: -0.96371496}
+  m_LocalRotation: {x: -0.2669336, y: -0.0000009160998, z: 0.0000033074111, w: -0.96371496}
   m_LocalPosition: {x: 6.9, y: 4.81, z: 11.799999}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:

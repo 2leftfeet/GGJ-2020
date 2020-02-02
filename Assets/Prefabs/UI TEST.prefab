@@ -740,6 +740,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 214090ee42b7a4b2289a85758f156053, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  shipLeg: {fileID: 862674980582566060}
+  fuelCanister: {fileID: 0}
+  energyCube: {fileID: 0}
+  rocketBooster: {fileID: 0}
 --- !u!1 &8392109782493555182
 GameObject:
   m_ObjectHideFlags: 0
