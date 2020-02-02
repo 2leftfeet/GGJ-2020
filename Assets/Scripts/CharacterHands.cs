@@ -6,6 +6,8 @@ public class CharacterHands : MonoBehaviour
 {
     public Transform carryingPointOffset;
     public Transform sphereCastOffset;
+
+    public Transform modelTransform;
     public CarriableObject carriableInHands;
 
     public float lerpSpeed = 5f;
@@ -37,11 +39,13 @@ public class CharacterHands : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.E))
             {
                 Collider[] hits = Physics.OverlapSphere(sphereCastOffset.position, 0.5f);
+                Debug.Log(hits.Length);
                 for(int i = 0; i < hits.Length; i++)
                 {
                     CarriableObject carriableObject = hits[i].GetComponent<CarriableObject>();
                     if(carriableObject)
                     {
+                        Debug.Log("eyyy");
                         Equip(carriableObject);
                         break;
                     }
@@ -80,7 +84,7 @@ public class CharacterHands : MonoBehaviour
             carriableInHands.transform.SetParent(null);
 
             Physics.IgnoreCollision(GetComponent<Collider>(), carriableInHands.GetComponent<Collider>(), false);
-            carriableInHands.GetComponent<Rigidbody>().AddForce(transform.forward * 50);
+            carriableInHands.GetComponent<Rigidbody>().AddForce(modelTransform.forward * 50);
 
 
             carriableInHands = null;
