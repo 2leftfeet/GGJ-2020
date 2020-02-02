@@ -2763,6 +2763,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   transitionToSceneID: 1
+  exitPointOffset: {x: 0, y: 0, z: 0}
 --- !u!1 &376941520
 GameObject:
   m_ObjectHideFlags: 0
@@ -2781,7 +2782,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!65 &376941521
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12937,7 +12938,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-682204
+  m_Name: pb_Mesh74712
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -15116,3 +15117,18 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 2022721915665107209}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &8086180969265130085
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8086180969265130084}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c01bd0edef2a2e4283bffd8cb68860a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  uniqueString: PowerCube
+  stayInAllScenes: 0
+  sceneId: 0

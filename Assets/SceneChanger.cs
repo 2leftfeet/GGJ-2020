@@ -13,6 +13,14 @@ public class SceneChanger : MonoBehaviour
     {
         if (col.gameObject.CompareTag("Player"))
         {
+            // Check if main world char instance has the object
+            var hands = col.GetComponent<CharacterHands>();
+            if (hands.carriableInHands && hands.GetComponent<SimpleCharacterController>())
+            {
+                hands.carriableInHands.GetComponent<PersistentObject>().sceneId = transitionToSceneID;
+                GravityCharacterController.instance.GetComponent<CharacterHands>().Equip(hands.carriableInHands, true);
+            }
+
             col.gameObject.transform.position =  transform.position + exitPointOffset;
             SceneManager.LoadScene(transitionToSceneID);
         }
