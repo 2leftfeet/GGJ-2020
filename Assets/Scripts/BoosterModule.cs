@@ -6,6 +6,22 @@ public class BoosterModule : CarriableObject
 {
     public ParticleSystem effect;
 
+    Vector3 startPos;
+
+    void Awake()
+    {
+        startPos = transform.position;
+    }
+
+
+    void OnLevelWasLoaded(int index)
+    {
+        if(index == 1)
+        {
+            Debug.Log("moveBack");
+            transform.position = startPos;
+        }
+    }
     public override void OnEquip(CharacterHands characterHands)
     {
         base.OnEquip(characterHands);

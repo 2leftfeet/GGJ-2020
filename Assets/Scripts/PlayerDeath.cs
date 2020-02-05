@@ -36,6 +36,11 @@ public class PlayerDeath : MonoBehaviour
     public IEnumerator LoadScene()
     {
         TransitionController.instance.StartTransition();
+        var hands = GetComponent<CharacterHands>();
+        if (hands)
+        {
+            hands.Unequip();
+        }
         yield return new WaitForSeconds(1.5f);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
